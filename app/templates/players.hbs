@@ -1,0 +1,16 @@
+<div class="span3">
+  <div class="well sidebar-nav">
+    <span class"nav-header">List of players</span>
+    <ul class="nav">
+    {{#each controller}}
+      <li>
+        {{#linkTo players.player this}}{{firstName}}{{/linkTo}}
+      </li>
+    {{/each}}
+    </ul>
+  </div>
+</div>
+
+<div class"span9">
+  {{outlet}}
+</div>
